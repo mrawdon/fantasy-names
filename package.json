@@ -1,10 +1,13 @@
 {
   "name": "fantasy-names",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A fantasy name generator",
   "main": "generator.js",
   "scripts": {
     "test": "make test"
+  },
+  "bin": {
+    "fantasy-names": "command.js"
   },
   "repository": {
     "type": "git",
@@ -15,18 +18,18 @@
     "names",
     "generator",
     "armour",
-    "descriptsion",
+    "description",
     "destiny",
     "diablo",
     "doctor",
     "who",
-    "drgon",
+    "dragon",
     "age",
     "dragon",
     "ball",
     "dungeons",
     "and",
-    "dragond",
+    "dragons",
     "elder",
     "scrolls",
     "eve",
