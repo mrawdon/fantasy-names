@@ -9,7 +9,7 @@ A fantasy name and description generator.
 
     fantasy-names diablo demons 10 0
 
-    echo "var names = require('fantasy-names');\nconsole.log(names('diablo', 'demons', 10, 0));" > names.js
+    echo -e "var names = require('fantasy-names');\nconsole.log(names('diablo', 'demons', 10, 0));" > names.js
     node names.js
 
 Typically type 0=female, and 1=male.
