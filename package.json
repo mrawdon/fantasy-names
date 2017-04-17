@@ -1,6 +1,6 @@
 {
   "name": "fantasy-names",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A fantasy name generator",
   "main": "generator.js",
   "scripts": {

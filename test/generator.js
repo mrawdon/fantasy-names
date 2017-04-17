@@ -24,4 +24,20 @@ describe('#generator', function() {
   it('Produces ten names with 4 arguments', function() {
     generator('military', 'nato', 10, 0).split('\n').length.should.equal(10);
   });
+  it('Returns different results without a seed', function() {
+    const result = generator('military', 'nato', 10, 0);	  
+    for(var i = 0; i < 1000; i++) {
+      let temp = require('../generator');
+	  if(temp('military', 'nato', 10, 0) != result) return true;
+	}
+	return false;
+  });
+  it('Returns the same result with a seed', function() {
+    const result = generator('military', 'nato', 10, 0, "Hello, World!");	  
+    for(var i = 0; i < 1000; i++) {
+      let temp = require('../generator');
+	  if(temp('military', 'nato', 10, 0, "Hello, World!") != result) return false;
+	}
+	return true;
+  });
 });
