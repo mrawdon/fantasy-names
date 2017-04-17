@@ -12,7 +12,7 @@ A fantasy name and description generator.
     echo -e "var names = require('fantasy-names');\nconsole.log(names('diablo', 'demons', 10, 0));" > names.js
     node names.js
 
-Typically type 0=female, and 1=male.
+Typically type 0=female, and 1=male. You can supply a string seed as the fith argument.
 
 ## Full List
 
