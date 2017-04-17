@@ -20,9 +20,6 @@ module.exports = function(group, individual, quantity, type, seed) {
 				if(q < quantity - 1) output += '\n';
 			}
 			return output;
-		} catch(e) {
-			console.error("Couldn't load: generator$"+group+"$"+individual);
-			return "";
-		}
+		} catch(e) {throw "Couldn't load: generator$"+group+"$"+individual;}
 	}
 }

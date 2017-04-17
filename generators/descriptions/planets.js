@@ -53,7 +53,6 @@ function generator$descriptions$planets(type) {
 	var names2 = [", named so by its discoverer, ", ", named after a famous scientist, ", ", as it's called by most scientists, ", ", which is a name which is still disputed, ", ", which is a temporary placeholder name, ", ", named so for the planet's properties, ", ", named so for its similarities to the fictional version, "];
 	var names2a = [", as it's called by most of the natives, ", ", the most popular name of the natives, ", ", as it's named by the native population, "];
 	if (intelligent > 0.5) {
-		//names2 = $.merge(names2, names2a);
 		names2.push.apply(names2, names2a);
 	}
 
@@ -63,15 +62,12 @@ function generator$descriptions$planets(type) {
 	var names3b = ["n ocean", " gas dwarf", " gas giant", " rogue", "n iron", "n ice", "n ice giant", " desert", " terrestial"];
 	var names3c = ["n ocean", " terrestial", "n iron", "n earth-like", " rogue", " carbon", " diamond", "n ice", "n ice giant", " terrestial", "n iron", "n earth-like", " rogue", " carbon", " diamond", "n ice", "n ice giant", " terrestial", "n iron", "n earth-like", " rogue", " carbon", " diamond", "n ice", "n ice giant"];
 	if (planetType === 1) {
-		//names3 = $.merge(names3, names3a);
 		names3.push.apply(names3, names3a);
 	}
 	if (planetType === 2) {
-		//names3 = $.merge(names3, names3b);
 		names3.push.apply(names3, names3b);
 	}
 	if (planetType === 3) {
-		//names3 = $.merge(names3, names3c);
 		names3.push.apply(names3, names3c);
 	}
 
@@ -98,7 +94,7 @@ function generator$descriptions$planets(type) {
 	var names14 = [" circular orbit", "n almost perfectly circular orbit", " slightly elliptic orbit", " wide, elliptic orbit", "n elliptic orbit", " fairly circular orbit"];
 	var names14a = ["narrow, elliptic orbit"];
 	if (planetType === 2) {
-		names14 = $.merge(names14, names14a);
+		names14.push.apply(names14, names14a);
 	}
 
 	// Conditions, dependant on planet type

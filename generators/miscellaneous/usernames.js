@@ -9,19 +9,9 @@ function generator$miscellaneous$usernames() {
 			rnd = Math.floor(Math.random() * names1.length);
 			names = names1[rnd];
 		} else {
-			if ($('#firChange').is(':checked')) {
-				val = $('.firChange').val();
-				rnd2 = Math.floor(Math.random() * names3.length);
-				names = val + names3[rnd2];
-			} else if ($('#secChange').is(':checked')) {
-				rnd = Math.floor(Math.random() * names2.length);
-				val = $('.secChange').val();
-				names = names2[rnd] + val;
-			} else {
-				rnd = Math.floor(Math.random() * names2.length);
-				rnd2 = Math.floor(Math.random() * names3.length);
-				names = names2[rnd] + names3[rnd2];
-			}
+			rnd = Math.floor(Math.random() * names2.length);
+			rnd2 = Math.floor(Math.random() * names3.length);
+			names = names2[rnd] + names3[rnd2];
 		}
 		return names;
 	}

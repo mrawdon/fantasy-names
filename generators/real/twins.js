@@ -9,58 +9,40 @@ function generator$real$twins(type) {
 
 	i = Math.floor(Math.random() * 10); {
 		if (type === 1) {
-			if ($('#firChange').is(':checked')) {
-				val = $(".firChange").val();
+			if (i < 6) {
+				rnd = Math.random() * nm2.length | 0;
+				names = nm2[rnd];
+			} else {
 				rnd = Math.random() * nm6.length | 0;
-				names = val + " & " + nm6[rnd];
-			} else {
-				if (i < 6) {
-					rnd = Math.random() * nm2.length | 0;
-					names = nm2[rnd];
-				} else {
-					rnd = Math.random() * nm6.length | 0;
+				rnd2 = Math.random() * nm6.length | 0;
+				while (rnd === rnd2) {
 					rnd2 = Math.random() * nm6.length | 0;
-					while (rnd === rnd2) {
-						rnd2 = Math.random() * nm6.length | 0;
-					}
-					names = nm6[rnd] + " & " + nm6[rnd2];
 				}
+				names = nm6[rnd] + " & " + nm6[rnd2];
 			}
-		} else if (type === 2) {
-			if ($('#firChange').is(':checked')) {
-				val = $(".firChange").val();
-				rnd = Math.random() * nm5.length | 0;
-				names = val + " & " + nm5[rnd];
+	} else if (type === 2) {
+			if (i < 6) {
+				rnd = Math.random() * nm3.length | 0;
+				names = nm3[rnd];
 			} else {
-				if (i < 6) {
-					rnd = Math.random() * nm3.length | 0;
-					names = nm3[rnd];
-				} else {
-					rnd = Math.random() * nm5.length | 0;
+				rnd = Math.random() * nm5.length | 0;
+				rnd2 = Math.random() * nm5.length | 0;
+				while (rnd === rnd2) {
 					rnd2 = Math.random() * nm5.length | 0;
-					while (rnd === rnd2) {
-						rnd2 = Math.random() * nm5.length | 0;
-					}
-					names = nm5[rnd] + " & " + nm5[rnd2];
 				}
+				names = nm5[rnd] + " & " + nm5[rnd2];
 			}
 		} else {
-			if ($('#firChange').is(':checked')) {
-				val = $(".firChange").val();
-				rnd = Math.random() * nm4.length | 0;
-				names = val + " & " + nm4[rnd];
+			if (i < 6) {
+				rnd = Math.random() * nm1.length | 0;
+				names = nm1[rnd];
 			} else {
-				if (i < 6) {
-					rnd = Math.random() * nm1.length | 0;
-					names = nm1[rnd];
-				} else {
-					rnd = Math.random() * nm4.length | 0;
+				rnd = Math.random() * nm4.length | 0;
+				rnd2 = Math.random() * nm4.length | 0;
+				while (rnd === rnd2) {
 					rnd2 = Math.random() * nm4.length | 0;
-					while (rnd === rnd2) {
-						rnd2 = Math.random() * nm4.length | 0;
-					}
-					names = nm4[rnd] + " & " + nm4[rnd2];
 				}
+				names = nm4[rnd] + " & " + nm4[rnd2];
 			}
 		}
 		return names;

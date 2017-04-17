@@ -1019,7 +1019,6 @@ function generator$descriptions$pokemons() {
 			rnTrait = Math.random() * 2 | 0;
 			if (rnTrait === 1) {
 				if (traits.length < 3 && pkm[rnd1][i] !== "none") {
-					console.log(pkm[rnd1][i]);
 					if (i === 2 || i === 3) {
 						rndmz = Math.random() * pkm[rnd1][i].length | 0;
 						traits.push(pkm[rnd1][i][rndmz]);
@@ -1035,7 +1034,6 @@ function generator$descriptions$pokemons() {
 			}
 		}
 	}
-	console.log("--");
 	var descrs = [];
 	switch (pkType) {
 		case "bug":
