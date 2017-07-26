@@ -1,2 +1,3 @@
 #!/usr/bin/env node
-console.log(require("fantasy-names")(...process.argv.slice(2)));
+var g = require("./generator")(...process.argv.slice(2));
+console.log(g);
