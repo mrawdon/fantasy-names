@@ -14,7 +14,7 @@ if(typeof group === 'undefined'){
 
 //filter out undefineds and dupes
 characters = characters.filter((character,i) => character && characters.indexOf(character)===i);
-
+console.log(characters.length);
 
 module.exports = function(seed) {
 	
